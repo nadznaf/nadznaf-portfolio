@@ -1,17 +1,23 @@
-import { ThemeButton } from "@/components/theme-button";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Navbar } from "@/components/layout/Navbar";
+import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { Experience } from "@/components/sections/Experience";
+import { Projects } from "@/components/sections/Projects";
+import { Skills } from "@/components/sections/Skills";
+import { Contact } from "@/components/sections/Contact";
+import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-4 p-8">
-      <Button variant="outline">
-        <Link href="/about">Go to About Page</Link>
-      </Button>
-      <ThemeButton />
-      <Link href="/contact" className="text-blue-500 underline">
-        Contact Us
-      </Link>
-    </div>
+    <main className="min-h-screen bg-background text-foreground antialiased selection:bg-secondary selection:text-secondary-foreground">
+      <Navbar />
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
