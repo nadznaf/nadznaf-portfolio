@@ -30,7 +30,7 @@ export function Footer() {
       </div>
       
       <div className="container mx-auto px-8 md:px-12 lg:px-20 mt-8 pt-8 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/50">
-        © {new Date().getFullYear()} Nadzira Azhani Farahiya. All rights reserved.
+        © {new Date().getFullYear()} nadznaf. All rights reserved.
       </div>
     </footer>
   );

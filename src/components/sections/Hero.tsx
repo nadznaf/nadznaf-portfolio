@@ -29,12 +29,14 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-secondary font-semibold tracking-wider uppercase text-sm">
-            Frontend Developer
-          </span>
+          <div className="flex items-center gap-2 font-semibold tracking-wider uppercase text-sm">
+            <span className="text-secondary">Frontend Developer</span>
+            <span className="text-muted-foreground">&</span>
+            <span className="text-primary">Software Engineer</span>
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold mt-4 mb-6 leading-tight">
             Hi, I'm <br />
-            <span className="text-primary dark:text-white">Nadzira</span> <span className="text-secondary">Azhani</span>
+            <span className="text-secondary">nadznaf</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
             Passionate Software Engineering student at UGM, crafting modern and responsive web experiences with Next.js, React, and Tailwind CSS.
@@ -72,10 +74,22 @@ export function Hero() {
         >
           <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
              <div className="absolute inset-0 bg-gradient-to-tr from-secondary to-primary rounded-[2rem] rotate-6 opacity-20 blur-xl animate-blob" />
-             <div className="relative w-full h-full bg-white/5 backdrop-blur-sm border border-white/20 rounded-[2rem] shadow-2xl overflow-hidden flex items-center justify-center">
-                {/* Placeholder for Photo - using text for now or generic icon */}
-                <span className="text-9xl">👩‍💻</span>
-             </div>
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="relative w-full h-full flex items-center justify-center"
+            >
+              <Image
+                src="/images/nadznaf-bondee.png"
+                alt="Nadznaf"
+                fill
+                className="object-contain drop-shadow-2xl"
+              />
+            </motion.div>
           </div>
         </motion.div>
       </div>
