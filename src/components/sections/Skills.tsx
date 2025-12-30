@@ -45,7 +45,7 @@ export function Skills() {
             </div>
             <div className="flex flex-wrap gap-2">
               {hardSkills.map(skill => (
-                <Badge key={skill} className="text-base py-1 px-3 bg-primary text-primary-foreground dark:bg-white dark:text-primary hover:bg-primary/90">
+                <Badge key={skill} className="text-base py-1 px-3 bg-primary text-primary-foreground dark:bg-white dark:text-primary-foreground hover:bg-primary/90">
                   {skill}
                 </Badge>
               ))}

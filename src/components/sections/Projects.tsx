@@ -64,7 +64,7 @@ export function Projects() {
               <div className="mt-auto">
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map(tag => (
-                    <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary dark:text-secondary-foreground dark:bg-secondary/20 hover:bg-primary/20">
+                    <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary dark:text-white dark:bg-secondary/20 hover:bg-primary/20">
                       {tag}
                     </Badge>
                   ))}

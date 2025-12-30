@@ -141,7 +141,7 @@ export function Contact() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90 dark:bg-white dark:text-primary dark:hover:bg-white/90">
+                <Button type="submit" size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90 dark:bg-white dark:text-primary-foreground dark:hover:bg-white/90">
                   <Send className="w-4 h-4 mr-2" /> Send Message
                 </Button>
               </form>

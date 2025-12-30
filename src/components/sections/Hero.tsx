@@ -41,7 +41,7 @@ export function Hero() {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button asChild size="lg" className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 dark:bg-white dark:text-primary dark:hover:bg-white/90">
+            <Button asChild size="lg" className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 dark:bg-white dark:text-primary-foreground dark:hover:bg-white/90">
               <Link href="#projects">
                 View My Work <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
