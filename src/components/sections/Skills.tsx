@@ -4,9 +4,16 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { Badge } from "@/components/ui/badge";
 import { Code2, Users, Award, Database, Layout, GitBranch } from "lucide-react";
 
-const hardSkills = [
-  "Javascript", "Typescript", "Python", "SQL", "PHP", 
-  "React", "Next.js", "Laravel", "Git", "Figma"
+const languages = [
+  "TypeScript", "JavaScript", "Python", "PHP", "SQL", "Java", "Kotlin", "Golang", "HTML/CSS"
+];
+
+const frameworksAndLibraries = [
+  "React", "Next.js", "TailwindCSS", "Laravel", "Bootstrap"
+];
+
+const toolsAndTech = [
+  "Git", "Figma", "Visual Studio Code", "REST API Integration"
 ];
 
 const softSkills = [
@@ -32,27 +39,64 @@ export function Skills() {
   return (
     <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-8 md:px-12 lg:px-20">
-        <h2 className="text-4xl font-bold mb-12 text-center">Skills & <span className="text-secondary">Certifications</span></h2>
+        <h2 className="text-4xl font-bold mb-12 text-center">Skills &amp; <span className="text-secondary">Certifications</span></h2>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* Hard Skills */}
+        {/* Technical Skills - 3 categories */}
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          {/* Languages */}
           <GlassCard>
             <div className="flex items-center gap-4 mb-6">
               <div className="p-3 bg-primary/10 rounded-lg text-primary dark:text-secondary">
                 <Code2 size={24} />
               </div>
-              <h3 className="text-xl font-bold">Hard Skills</h3>
+              <h3 className="text-xl font-bold">Languages</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {hardSkills.map(skill => (
-                <Badge key={skill} className="text-base py-1 px-3 bg-primary text-primary-foreground dark:bg-white dark:text-primary-foreground hover:bg-primary/90">
+              {languages.map(skill => (
+                <Badge key={skill} className="text-sm py-1 px-3 bg-primary text-primary-foreground dark:bg-white dark:text-primary-foreground hover:bg-primary/90">
                   {skill}
                 </Badge>
               ))}
             </div>
           </GlassCard>
 
-          {/* Soft Skills */}
+          {/* Frameworks & Libraries */}
+          <GlassCard>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-secondary/20 rounded-lg text-secondary dark:text-secondary-foreground">
+                <Layout size={24} />
+              </div>
+              <h3 className="text-xl font-bold">Frameworks</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {frameworksAndLibraries.map(skill => (
+                <Badge key={skill} className="text-sm py-1 px-3 bg-secondary/80 text-white hover:bg-secondary/90">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </GlassCard>
+
+          {/* Tools & Technologies */}
+          <GlassCard>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-primary/10 rounded-lg text-primary dark:text-secondary">
+                <GitBranch size={24} />
+              </div>
+              <h3 className="text-xl font-bold">Tools</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {toolsAndTech.map(skill => (
+                <Badge key={skill} className="text-sm py-1 px-3 bg-primary/80 text-white hover:bg-primary/90">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </GlassCard>
+        </div>
+
+        {/* Soft Skills */}
+        <div className="mb-16">
           <GlassCard>
             <div className="flex items-center gap-4 mb-6">
               <div className="p-3 bg-secondary/20 rounded-lg text-secondary dark:text-secondary-foreground">

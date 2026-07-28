@@ -12,10 +12,10 @@ export function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
-        <Image 
-          src="/images/hero-bg.png" 
-          alt="Abstract 3D Background" 
-          fill 
+        <Image
+          src="/images/hero-bg.png"
+          alt="Abstract 3D Background"
+          fill
           priority
           quality={100}
           className="object-cover opacity-90 dark:opacity-60"
@@ -36,12 +36,12 @@ export function Hero() {
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mt-4 mb-6 leading-tight">
             Hi, I'm <br />
-            <span className="text-secondary">nadznaf</span>
+            <span className="text-secondary">NAFA</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
-            Passionate Software Engineering student at UGM, crafting modern and responsive web experiences with Next.js, React, and Tailwind CSS.
+            Final-year Software Engineering student at UGM, specializing in Front-End development (React, Next.js, TypeScript) and Full-Stack (Laravel), with a strong passion for UI/UX design.
           </p>
-          
+
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 dark:bg-white dark:text-primary-foreground dark:hover:bg-white/90">
               <Link href="#projects">
@@ -70,26 +70,16 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative hidden md:block"
+          className="relative hidden md:flex justify-center items-center"
         >
-          <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
-             <div className="absolute inset-0 bg-gradient-to-tr from-secondary to-primary rounded-[2rem] rotate-6 opacity-20 blur-xl animate-blob" />
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="relative w-full h-full flex items-center justify-center"
-            >
-              <Image
-                src="/images/nadznaf-bondee.png"
-                alt="Nadznaf"
-                fill
-                className="object-contain drop-shadow-2xl"
-              />
-            </motion.div>
+          <div className="relative w-[340px] h-[440px]">
+            <Image
+              src="/images/nadznaf-hero.jpg"
+              alt="Nadzira Azhani Farahiya"
+              fill
+              priority
+              className="object-contain object-bottom drop-shadow-2xl"
+            />
           </div>
         </motion.div>
       </div>

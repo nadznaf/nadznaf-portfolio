@@ -13,13 +13,13 @@ export function About() {
             <h2 className="text-4xl font-bold mb-6"> <span className="text-primary dark:text-secondary">About</span> Me</h2>
             <div className="prose dark:prose-invert text-lg text-muted-foreground leading-relaxed">
               <p>
-                I am a third-year undergraduate student in Software Engineering at Universitas Gadjah Mada, Yogyakarta. 
-                My journey focuses on front-end development, where I love turning complex designs into responsive, 
-                user-friendly web applications.
+                Final-year Software Engineering Technology undergraduate at UGM with strong proficiency in
+                Front-End development (React, Next.js, TypeScript) and Full-Stack experience (Laravel),
+                coupled with a proven talent for UI/UX design.
               </p>
               <p>
-                Beyond coding, I have a diverse academic background including Python, SQL, and AI. 
-                I enjoy collaborating in teams and applying my skills to real-world projects.
+                I have a proven track record in developing web applications, e-commerce platforms, and mentoring developer teams.
+                Highly adaptable and eager to leverage technical skills in a challenging front-end or full-stack engineering role.
               </p>
             </div>
             
@@ -30,7 +30,7 @@ export function About() {
                 </div>
                 <div>
                   <h4 className="font-bold">GPA</h4>
-                  <p className="text-sm text-muted-foreground">3.74 / 4.00</p>
+                  <p className="text-sm text-muted-foreground">3.78 / 4.00</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -38,8 +38,8 @@ export function About() {
                    <Calendar size={24} />
                  </div>
                  <div>
-                   <h4 className="font-bold">Experience</h4>
-                   <p className="text-sm text-muted-foreground">3+ Years</p>
+                   <h4 className="font-bold">Status</h4>
+                   <p className="text-sm text-muted-foreground">Final-Year Student</p>
                  </div>
               </div>
             </div>

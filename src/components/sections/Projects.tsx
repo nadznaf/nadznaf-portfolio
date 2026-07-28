@@ -9,10 +9,10 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Akuna E-commerce Skinkare",
+    title: "Akuna E-commerce Skinkare Platform",
     role: "Front End Developer",
     period: "Aug 2025 - Dec 2025",
-    description: "Architected a high-performance, component-based front-end using React and TypeScript for a local skincare online store. Implemented dynamic product discovery, cart management, and a multi-step checkout process.",
+    description: "Architected and developed a high-performance, component-based front-end online store with scalable UI architecture using React and TypeScript. Implemented 4+ key e-commerce user flows (dynamic product search/filtering, detail pages, cart management, multi-step checkout) and integrated REST APIs for real-time order processing.",
     tags: ["React", "TypeScript", "REST API", "E-commerce"],
     link: "https://akuna-fe-remastered.vercel.app/" 
   },
@@ -20,15 +20,15 @@ const projects = [
     title: "LSP UGM Website Portal",
     role: "Front End Developer",
     period: "Jan 2025 - July 2025",
-    description: "Refactored and enhanced the existing monolithic front-end codebase to improve maintainability. Revitalized the UI with a modern design and integrated REST APIs for dynamic data display.",
+    description: "Refactored and developed legacy monolithic front-end codebase, transforming complex UI/UX designs into pixel-perfect, responsive components to improve maintainability. Integrated REST APIs to dynamically fetch and display certification schedules, candidate data, and assessment results, enhancing overall user experience.",
     tags: ["Laravel Blade", "TailwindCSS", "REST API"],
     link: "https://silsp.trpl.space/"
   },
   {
-    title: "ASSETS Student Association System",
+    title: "ASSETS Information System",
     role: "Front End Developer",
     period: "Aug 2024 - Jan 2025",
-    description: "Developed and maintained the official information system for the ASSETS student association. Engineered responsive interfaces for member management, event broadcasting, and article publication.",
+    description: "Developed the monolithic front-end interface for the official student association information system, encompassing 3 core modules: member management, event broadcasting, and article publication using Laravel Blades.",
     tags: ["Laravel", "Blade", "Monolithic"],
     link: "https://assetsugm.id/"
   }
